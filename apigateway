@@ -1,0 +1,4 @@
+aws apigatewayv2 create-api \
+  --name ContactFormAPI \
+  --protocol-type HTTP \
+  --target arn:aws:lambda:<region>:<account-id>:function:SubmitContactForm
