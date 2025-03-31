@@ -1,0 +1,8 @@
+zip function.zip lambda_function.py
+
+aws lambda create-function \
+  --function-name SubmitContactForm \
+  --runtime python3.9 \
+  --handler lambda_function.lambda_handler \
+  --role arn:aws:iam::<account-id>:role/<lambda-exec-role> \
+  --zip-file fileb://function.zip
