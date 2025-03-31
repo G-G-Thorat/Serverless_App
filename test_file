@@ -1,0 +1,6 @@
+POST https://<api-id>.execute-api.<region>.amazonaws.com/
+{
+  "name": "Gaurav",
+  "email": "gaurav@example.com",
+  "message": "Cloud is awesome!"
+}
